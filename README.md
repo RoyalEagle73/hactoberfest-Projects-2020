@@ -1,4 +1,6 @@
-# hactoberfest-Projects-2020
+![HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c](https://user-images.githubusercontent.com/34307370/94694710-bdb6af80-0352-11eb-9665-10bbe937e277.png)
+
+# Hactoberfest-Projects-2020
 A maintainer repo for hacktoberfest'20.
 
 ## What to do?
