@@ -22,5 +22,7 @@ After you've added code, just come back to readme and add your name under contri
 ## Contributors
 (Your name here)[Your GitHub/Linkedin URL here]
 
+Pull-request for Hacktoberfest.
+
 ## Final words
 All the best for **Hacktoberfest** :)
