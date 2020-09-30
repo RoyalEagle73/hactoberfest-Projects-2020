@@ -20,7 +20,7 @@ After you've added code, just come back to readme and add your name under contri
 [Deepak Chauhan](https://linkedin.com/in/deepakchauhan878)
 
 ## Contributors
-(Your name here)[Your GitHub/Linkedin URL here]
+(Manvi Jha)[ https://github.com/Severus-Matthew ]
 
 ## Final words
 All the best for **Hacktoberfest** :)
