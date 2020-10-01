@@ -1,0 +1,14 @@
+asgiref==3.2.10
+Django==3.1.1
+django-crispy-forms==1.9.2
+django-filter==2.3.0
+django-markdown-deux==1.0.5
+django-pagedown==2.1.2
+djangorestframework==3.11.1
+djangorestframework-jwt==1.11.0
+Markdown==3.2.2
+markdown2==2.3.9
+Pillow==7.2.0
+PyJWT==1.7.1
+pytz==2020.1
+sqlparse==0.3.1
