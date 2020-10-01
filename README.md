@@ -28,7 +28,7 @@ After you've added code, just come back to readme and add your name under contri
 
 [Amrit Anand](https://github.com/galahad42)
 
-[Your name here](Your GitHub/Linkedin URL here)
+[Ajay Neman](https://github.com/AjayNeman45)
 
 ## Final words
 All the best for **Hacktoberfest** :)
