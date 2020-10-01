@@ -20,8 +20,10 @@ After you've added code, just come back to readme and add your name under contri
 [Deepak Chauhan](https://linkedin.com/in/deepakchauhan878)
 
 ## Contributors
+
 [Niranjan B](https://github.com/niranjanneeru) - [Blog API](BlogAPI/README.md)
-[Amrit Anand](https://github.com/galahad42) 
+(Dhruvee Birla)[https://github.com/dhruvxx]
+(Amrit Anand)[https://github.com/galahad42] 
 (Your name here)[Your GitHub/Linkedin URL here]
 
 ## Final words
