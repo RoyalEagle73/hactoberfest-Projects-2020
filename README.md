@@ -20,6 +20,7 @@ After you've added code, just come back to readme and add your name under contri
 [Deepak Chauhan](https://linkedin.com/in/deepakchauhan878)
 
 ## Contributors
+[Niranjan B](https://github.com/niranjanneeru) - [Blog API](BlogAPI/README.md)
 [Krishna Sharma](https://github.com/krishna16sharma) - [Hackerrank Python Solutions](Hackerrank-Python)
 [Niranjan B](https://github.com/niranjanneeru) - [Blog API](BlogAPI/README.md)
 [Dhruvee Birla](https://github.com/dhruvxx)
