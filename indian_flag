@@ -1,0 +1,56 @@
+# importig turtle library
+import turtle
+ws = turtle.Screen()
+
+# for the upper orange rectange.
+flagTurtle = turtle.Turtle()
+flagTurtle.penup()
+flagTurtle.goto(-180, 60)
+flagTurtle.pendown()
+flagTurtle.begin_fill()
+flagTurtle.fillcolor("orange")
+flagTurtle.left(90)
+flagTurtle.forward(90)
+flagTurtle.right(90)
+flagTurtle.forward(400)
+flagTurtle.right(90)
+flagTurtle.forward(90)
+flagTurtle.right(90)
+flagTurtle.forward(400)
+flagTurtle.end_fill()
+
+#for the middle white rectange.
+flagTurtle.left(90)
+flagTurtle.forward(90)
+flagTurtle.left(90)
+flagTurtle.forward(400)
+flagTurtle.left(90)
+flagTurtle.forward(90)
+flagTurtle.left(90)
+flagTurtle.forward(400)
+flagTurtle.left(90)
+flagTurtle.forward(90)
+
+#for the lower green color rectangle.
+flagTurtle.begin_fill()
+flagTurtle.fillcolor("green")
+flagTurtle.forward(90)
+flagTurtle.left(90)
+flagTurtle.forward(400)
+flagTurtle.left(90)
+flagTurtle.forward(90)
+flagTurtle.left(90)
+flagTurtle.forward(400)
+flagTurtle.end_fill()
+
+#for the middle wheel of the flag.
+flagTurtle.penup()
+flagTurtle.goto(23,42)
+flagTurtle.pendown()
+flagTurtle.begin_fill()
+flagTurtle.fillcolor("blue")
+flagTurtle.circle(30)
+flagTurtle.end_fill()
+
+#to hold the screen.
+turtle.done()
