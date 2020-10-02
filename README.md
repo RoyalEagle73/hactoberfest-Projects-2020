@@ -11,7 +11,7 @@ Add any project, piece of code or script of your choice you wish to share in thi
 
 It can be any of any length and can be any number of scripts, just add a folder with your name or projects name.
 
-**Note : Don't add hello world programs, PRs will be closed immediately. Please add unique codes**
+**Note : Don't add hello world programs, PRs will be closed immediately. Please add unique codes.**
 
 ## What's next?
 After you've added code, just come back to readme and add your name under contributor's list and you're done.
