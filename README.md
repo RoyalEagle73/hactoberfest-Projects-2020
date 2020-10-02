@@ -28,7 +28,7 @@ After you've added code, just come back to readme and add your name under contri
 
 [Amrit Anand](https://github.com/galahad42)
 
-[Kumar Nilind](https://github.com/Graviton5)
+[Milind Kumar](https://github.com/Graviton5)
 
 [Your name here](Your GitHub/Linkedin URL here)
 
