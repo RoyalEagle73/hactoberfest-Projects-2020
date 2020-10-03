@@ -28,6 +28,8 @@ After you've added code, just come back to readme and add your name under contri
 
 [Amrit Anand](https://github.com/galahad42)
 
+[Rishabh Aggarwal](https://github.com/passionatecricketer)
+
 [Your name here](Your GitHub/Linkedin URL here)
 
 ## Final words
