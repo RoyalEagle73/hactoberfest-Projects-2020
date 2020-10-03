@@ -30,6 +30,8 @@ After you've added code, just come back to readme and add your name under contri
 
 [Rishabh Aggarwal](https://github.com/passionatecricketer)
 
+[Milind Kumar](https://github.com/Graviton5)
+
 [Your name here](Your GitHub/Linkedin URL here)
 
 ## Final words
