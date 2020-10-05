@@ -1,4 +1,4 @@
-# Send-Reminders
+# Send Reminders
 We have used Zenity for making a simple GUI for reminder screen and Python to send emails.
 
 To run on Linux, open Terminal and write :
@@ -15,3 +15,9 @@ Note :
 * If required on Windows, please install Zenity from https://github.com/kvaps/zenity-windows/releases/download/v3.20.0-1/zenity-3.20.0_win32-1.exe
 * Please update the GMAIL_ID and GMAIL_PWD in send_reminders.py
 * If, in any case, the program is not able to send reminder, it will show up the error. Fix it and it will start working.
+
+A simple mini project by [Ashutosh Krishna](http://ashutoshkrris.herokuapp.com).
+
+Find my other works in my Github [Profile](https://github.com/ashutoshkrris).
+
+Contact me [here](http://ashutoshkrris.herokuapp.com/contact.html)
