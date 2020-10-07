@@ -32,7 +32,9 @@ After you've added code, just come back to readme and add your name under contri
 
 [Milind Kumar](https://github.com/Graviton5)
 
-[Mahendra Rathore](https://github.com/Mahendra7985/Linkedin :https://www.linkedin.com/in/mahendra-rathore-92971415b/)
+Mahendra Rathore (https://github.com/Mahendra7985 / Linkedin :https://www.linkedin.com/in/mahendra-rathore-92971415b/)
+
+[Your name here](Your GitHub/Linkedin URL here)
 
 ## Final words
 All the best for **Hacktoberfest** :)
