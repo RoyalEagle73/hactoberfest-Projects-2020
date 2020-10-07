@@ -1,6 +1,6 @@
 # Speech Text Reader
 ## screenshot
-![website-screenshot](img/screenshot.png)
+![website-screenshot](img/screenshot.jpg)
 
 A text to speech app for non-verbal people. Pre-made buttons and custom text speech. This project uses the Web Speech API
 
