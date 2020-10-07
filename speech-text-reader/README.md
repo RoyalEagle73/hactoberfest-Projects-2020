@@ -11,3 +11,12 @@ A text to speech app for non-verbal people. Pre-made buttons and custom text spe
 - Drop down custom text to speech
 - Speaks the text typed in
 - Change voices and accents
+
+## How to See
+```sh
+$ git clone https://github.com/anandmohan23/hactoberfest-Projects-2020.git
+```
+```sh
+$ cd speeach-text-reader
+```
+click on *index.html*
