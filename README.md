@@ -32,6 +32,8 @@ After you've added code, just come back to readme and add your name under contri
 
 [Milind Kumar](https://github.com/Graviton5)
 
+[Ritik Raj](https://github.com/MARK-42) - [Quake Report](QuakeReport/README.md)
+
 [Your name here](Your GitHub/Linkedin URL here)
 
 ## Final words
