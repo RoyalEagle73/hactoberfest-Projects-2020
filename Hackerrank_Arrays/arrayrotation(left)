@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+void rotleft(long int oarr[], long int n, long int d)
+{
+    long int narr[n],i,j,k;
+    for(j = 0;j < n;j++)
+    {
+        k = j - d;
+        if(j < d)
+        {
+            k = (n - d) + j;
+        }
+        narr[k] = oarr[j];
+    }
+    for(i = 0;i < n;i++)
+    {
+        cout << narr[i] << " ";
+    }
+}
+
+int main()
+{
+    long int i,n,d;
+    cin >> n >> d;
+    long int arr[n];
+    for(i = 0;i < n;i++)
+    {
+        cin >> arr[i];
+    }
+    rotleft(arr, n ,d);
+    return 0;
+} 
