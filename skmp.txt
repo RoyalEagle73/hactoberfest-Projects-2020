@@ -1,0 +1,214 @@
+
+
+
+
+/*problem---Smallest KMP 
+August Challenge 2020 div 2
+#hactoberfest contribution..
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    try{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		sc.nextLine();
+		
+		
+		
+		
+		for(int i=0;i<=T;i++)
+		{
+		    String S=sc.nextLine();
+		    String P=sc.nextLine();
+		    String sum=S+" "+P;
+		    int temp=0;
+		    
+		    
+		    int A[]=new int[26];
+		   
+		
+		    
+		   
+		    for(int j=0;j<sum.length();j++)
+		    {
+		        
+		        if(sum.charAt(j)==' ')
+		        {
+		            temp=1;
+		            continue;
+		        }
+		        else if(temp==0){
+		        A[(int)sum.charAt(j)-97]++;
+		        
+		        }
+		        else if(temp==1){
+		            A[(int)sum.charAt(j)-97]--;
+		        }
+		    }
+		 
+		 
+		 
+		    String res="",str="";
+		    
+		    for(int j=0;j<26;j++)
+		    {
+		        if(A[j]!=0){
+		            
+		            if(A[j]>0)
+		            {
+		                char c=((char)(j+97));
+		                str=String.valueOf(c);
+		                res=res+new String(new char[A[j]]).replace("\0", str);
+ 
+		            }
+		            else
+    		       res=res+((char)(j+97));
+    		       //System.out.print(A[j]);
+    		       
+		            }
+		        }
+		    
+		    
+		    //System.out.println(res);
+		     String ss=res;
+		   
+            
+          
+            int flag=0,cou=0,compareOneTwo,var1;
+            temp=0;
+             String str1="" ;
+             String str2="";
+            
+             for(int j=0;j<ss.length();j++)
+             {
+                   compareOneTwo = Character.compare(ss.charAt(j), P.charAt(0));
+                  
+                   if(compareOneTwo==0&&temp==0)
+                   {
+                       cou=j;
+                       temp++;
+                       // System.out.println(cou);
+            
+                   }
+                 
+                   
+                   if(compareOneTwo>0)
+                   {
+                       
+                       flag=j;
+                        //System.out.println("."+flag);
+            
+                       break;
+                   }
+             }
+            
+            // System.out.println(ss+" "+flag+" "+cou);
+            
+          //  System.out.println(ss.substring(0,flag)+P+ss.substring(flag));
+          //System.out.println(ss.substring(0,flag)+P+ss.substring(flag));
+          
+          
+          if(flag!=0&&cou==0)
+          {
+              System.out.println(ss.substring(0,flag)+P+ss.substring(flag));
+          
+          }
+         else if(flag!=0&&cou!=0)
+          {
+              //System.out.println( ss.substring(0,cou)+P+ss.substring(cou)+"  "+ss.substring(0,flag)+P+ss.substring(flag));
+          
+                     str1 =ss.substring(0,cou)+P+ss.substring(cou);
+                     str2 = ss.substring(0,flag)+P+ss.substring(flag);
+            
+              
+                  var1=(str1).compareTo( str2);
+                  //System.out.println( var1);
+          
+                  if(var1<0)
+                   System.out.println(str1);
+                   else
+                   System.out.println(str2);
+          }
+                  
+              
+              else if(flag==0&&cou!=0)
+              {
+                  
+                  
+                  
+                     str1 =ss.substring(0,cou)+P+ss.substring(cou);
+                     str2 = ss+P;
+            
+                    //System.out.println(str1);
+                     var1=(str1).compareTo( str2);
+                    
+                   // System.out.println(str1+" +"+str2);
+                    
+                     if(var1<0)
+                   System.out.println(str1 );
+                   else
+                   System.out.println(str2 );
+              
+                  
+                   //System.out.println( str1);
+                  
+          
+                  
+              }
+              else if(flag==0&&cou==0)
+              {
+                 // System.out.println("tuht");
+                 
+                 str1 =P+ss;
+                     str2 = ss+P;
+            
+                    //System.out.println(str1);
+                     var1=(str1).compareTo( str2);
+                    
+                   // System.out.println(str1+" +"+str2);
+                    
+                     if(var1<0)
+                   System.out.println(str1 );
+                   else
+                   System.out.println(str2 );
+                 
+                 
+              }
+              
+              
+          
+		     
+		     
+		     
+		     
+		     
+		}
+	    }catch(Exception e)
+	    {
+	        ;
+	    }
+	}
+}
