@@ -2,16 +2,12 @@ var express = require('express');
 
 var app = express();
 
-var constant = require('./config/constants');
-
 
 var port = process.env.PORT || 8042;
-var passport = require('passport');
 var path = require('path');
 
 var bodyParser = require('body-parser');
-var session = require('express-session');
-var bodyParser = require('body-parser');
+
 
 
 app.use(bodyParser.json());
@@ -28,7 +24,7 @@ app.set('view engine', 'ejs');
 
 
 // routes ======================================================================
-require('./config/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./config/routes.js')(app); // load our routes and pass in our app and fully configured passport
 
 
 //launch ======================================================================
