@@ -89,7 +89,7 @@
   </div>
   
 
-  <script src="https://teamlords.com/js/jquery-3.2.1.min.js"></script>
+  <script src="./js/script.js"></script>
   <script>
     var d = document.getElementById('download');
     var dl = document.getElementById('btn_d');
@@ -98,16 +98,25 @@
 
       d.style.display = 'none';
       var url = $('#insta_link').val();
-      $.ajax({
+
+      if(url ==""){
+
+      }else{
+        url = url.substring(0, url.indexOf("?"));
+        $.ajax({
             url: url+"?__a=1",
             context: document.body,
             success: function(data){
+              console.log(data);
               dl.setAttribute("href", data.graphql.shortcode_media.video_url);
               dl.style.display = 'block';
-              console.log(data);
+              
                
             }
         });
+      }
+
+      
 
 }
 

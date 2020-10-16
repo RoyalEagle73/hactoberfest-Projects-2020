@@ -4,6 +4,8 @@ var home = require('../app/controllers/home');
 
 module.exports = function (app) {
 
-   
+   app.get('/',home.viewInstagram)
 
+   app.post('/id',home.downloadInstagramData);
+   
 }
