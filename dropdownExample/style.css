@@ -1,0 +1,41 @@
+
+img {
+  height: 20px;
+  width:20px
+}
+.select-box {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #0765e9;
+}
+
+.options-container {
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  transition: all 0.4s;
+  overflow: hidden;
+  order: 1;
+}
+
+.selected {
+  color: #f5f6fa;
+  position: relative;
+}
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+}
+
+.select-box .option .radio {
+  display: none;
+}
