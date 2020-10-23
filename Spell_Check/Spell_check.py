@@ -4,7 +4,7 @@ import re
 
 spellings_to_check = ["hello", "how", "what", "however", "something", "anything",
                     "give", "day", "about", "time", "make", "just", "people", "good", 
-                    "could", "would", "think", "after", "work", "because"]
+                    "could", "would", "think", "after", "work", "because","should","may","might","and"]
 
 def check(word):
     global spellings_to_check
