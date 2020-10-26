@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+  int i, j;
+  string str;
+  int n;
+  cin >> n;
+  while(n--)
+  {
+      cin>>str;
+      int len = str.length();
+      int arr[len-1];
+      for(i=0;i<len-1;i++)
+      {
+          arr[i]=abs(str[i]-str[i+1]);
+          //cout<<arr[i]<<endl;
+      }
+      int flag=0;
+      for(i=0,j=len-2;i<(len-1)/2;i++,j--)
+      {
+          //cout<<arr[i]<<" "<<arr[j]<<endl;
+          if(arr[i]!=arr[j])
+          flag=1;
+      }
+      if(flag==0)
+      cout<<"Funny"<<endl;
+      else
+      cout<<"Not Funny"<<endl;
+  }
+  return 0;
+}
