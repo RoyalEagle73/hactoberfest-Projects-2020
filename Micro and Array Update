@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,k,i,second=0;
+        cin>>n>>k;
+        int a[n];
+        for(i=0;i<n;i++)
+            cin>>a[i];
+        sort(a,a+n);
+        while(a[0]<k)
+        {
+            a[0]++;
+            second++;
+        }
+        cout<<second<<endl;
+    }
+    return 0;
+}
