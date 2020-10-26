@@ -10,7 +10,7 @@ from tkinter import Text,Tk
 #import TkTreectrl as treect
 
 today=date.today()
-print ('software is runing......')
+print ('software is running......')
 firstw=Tk()
 firstw.title("SCHOOL MANAGEMENT SYSTEM")
 firstw.geometry("1600x1000+0+0")
@@ -253,7 +253,7 @@ def root():
 #================================droplist======================================
 
     box=ttk.Combobox(root,textvariable=branch,state="readonly", font=("arial",12,"bold"),width=22)
-    box['values']=['SELECT','COMPUTER SCINCE','MACHENICAL','CIVIL','IT']
+    box['values']=['SELECT','COMPUTER SCIENCE','MECHANICAL','CIVIL','IT']
     box.current(0)
     box.place(x=503,y=395)
 
