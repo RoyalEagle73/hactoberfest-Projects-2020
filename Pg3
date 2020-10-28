@@ -1,0 +1,113 @@
+/*3) Implement the following class hierarchy by defining all methods of each class.
+Demonstrate the call of each method and access to each data member using an object of
+bottom-most class.
+Class : Headset
+Members: brand, price
+Methods: constructors, showSpec()
+Class : WirelessHeadset (inherits Headset)
+Members : wirelesstech, batterytype, batteryopduration
+Methods: constructors, showSpec(), changeSpec()
+Class: EarbudHeadset (inherits WirelessHeadset )
+Members : size, isTouchType, weight
+Methods: constructors, showSpec(), changeSpec()
+*/
+
+class Headset
+{
+ String brand;
+ double price;
+ Headset(String a,double b)
+ {
+  brand=a;
+  price=b;
+ }
+ void showSpec()
+ {
+  System.out.println("Brand of the headset : "+brand);
+  System.out.println("Price of the headset : "+price);
+ }
+}
+class WirelessHeadset extends Headset
+{
+ String wirelesstech,batterytype;
+ int batteryopduration;
+ WirelessHeadset(String c,double d,String e,String f,int g)
+ {
+	 super(c,d);
+  wirelesstech=e;
+  batterytype=f;
+  batteryopduration=g;
+ }
+ void showSpec()
+ {
+	 super.showSpec();
+  System.out.println("wirelesstech of the headset : "+wirelesstech);
+  System.out.println("batterytype of the headset : "+batterytype);
+  System.out.println("battery op duration of the headset:"+batteryopduration);
+ }
+ void changeSpec()
+ {
+	super.brand="abc";
+	super.price=12.3;
+	System.out.println("changed brand of the headset: "+super.brand);
+	System.out.println("changed price of the headset: "+super.price);
+	System.out.println("wirelesstech of the headset : "+wirelesstech);
+	  System.out.println("batterytype of the headset : "+batterytype);
+	  System.out.println("battery op duration of the headset:"+batteryopduration);
+ }
+}
+class EarbudHeadset extends WirelessHeadset
+{
+	int size;
+	boolean isTouchType;
+	double weigth;
+	EarbudHeadset(String n,double o,String h,String i,int j,int k,boolean l,double m)
+	{
+		super(n,o,h,i,j);
+		size=k;
+		isTouchType=l;
+		weigth=m;
+	}
+	void showSpec()
+	 {
+		 super.showSpec();
+	  System.out.println("size of the headset : "+size);
+	  System.out.println("istouchtype of the headset : "+isTouchType);
+	  System.out.println("weigth of the headset:"+weigth);
+	 }
+	void changeSpec()
+	 {
+		super.wirelesstech="def";
+		super.batterytype="ghi";
+		super.batteryopduration=3;
+		System.out.println("changed wirelesstech of the headset: "+super.wirelesstech);
+		System.out.println("changed batterytype of the headset: "+super.batterytype);
+		System.out.println("changed batteryopduration of the headset: "+super.batteryopduration);
+		 System.out.println("size of the headset : "+size);
+		  System.out.println("istouchtype of the headset : "+isTouchType);
+		  System.out.println("weigth of the headset:"+weigth);
+	 }
+	
+}
+ 
+public class Pg3 {
+
+	public static void main(String[] args) {
+		EarbudHeadset S=new EarbudHeadset("ty",67.8,"jkl","mno",8,6,true,12.5);
+		S.showSpec();
+		System.out.println();
+		S.changeSpec();
+		System.out.println();
+		System.out.println();
+        WirelessHeadset T=new WirelessHeadset("mnop",34.4,"qrs","tuv",5);
+		T.showSpec();
+		System.out.println();
+		T.changeSpec();
+		System.out.println();
+		System.out.println();
+		Headset U=new Headset("xyz",3.4);
+		U.showSpec();
+		
+	}
+
+}
