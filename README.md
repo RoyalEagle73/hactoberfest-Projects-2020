@@ -35,4 +35,4 @@ After you've added code, just come back to readme and add your name under contri
 [Your name here](Your GitHub/Linkedin URL here)
 
 ## Final words
-All the best for **Hacktoberfest** :)
+All the best for **Hacktoberfest**
