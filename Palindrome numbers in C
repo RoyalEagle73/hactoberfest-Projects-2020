@@ -1,0 +1,55 @@
+include<stdio.h>
+
+int main()
+
+{
+
+  int n,r,sum=0,temp;
+
+  printf("\n Enter a number: \n");
+
+  scanf("%d",&n);
+
+  temp=n;
+
+ // s=sizeof(n);
+
+  //printf("size=%d\n",s);
+
+/* while(n!=1){
+
+   n=n/10;
+
+   ++count;
+
+  }
+
+printf("\n number of digits : %d",count);
+
+*/
+
+/*if(count>1)*/
+
+ while(n>0)
+
+ {
+
+     r=n%10;
+
+     sum=(sum*10)+r;
+
+     n=n/10;
+
+  }
+
+ if(temp==sum)
+
+  printf("\n %d is a palindrome number",temp);
+
+ else
+
+   printf("\n %d is not a palindrome number",temp);
+
+ return 0;
+
+}
