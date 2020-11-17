@@ -1,0 +1,34 @@
+Insert function
+-----------------------
+int front=0,rear=-1;
+void insert(int a[],int x)
+{
+++rear;
+if(rear==MAX)
+{
+printf("Queue full");
+exit(1);
+}
+a[rear]=x;
+}
+
+Queue is an ordered list, defined as the rear end and the front end.
+
+Delete function
+------------------------
+int delete(int a[])
+{
+int x;
+if(front>rear)
+{
+printf("\nQueue is empty");
+exit(1);
+}
+x=a[front];
+front++;
+return x;
+}
+
+1. Discussed Program
+2. Input 1 ---> Element will be inserted into the queue
+   
