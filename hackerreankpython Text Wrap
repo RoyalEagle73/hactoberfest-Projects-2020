@@ -1,0 +1,10 @@
+import textwrap // textwrap module provide wrap and fill 
+
+def wrap(string, max_width):  //fuction 
+    x=textwrap.fill(string,max_width)   //this line will takes string as input and also size that will slice the string into that size   
+    return x
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input()) //takes inputs
+    result = wrap(string, max_width) //call the fuction
+    print(result)

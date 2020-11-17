@@ -1,0 +1,260 @@
+#include <iostream>
+#include <stdlib.h>
+#include <vector>
+using namespace std;
+#define n 300
+int num=0;
+struct uslugi
+{
+    string name;
+    string surname;
+    string venue;
+    int  time;
+    int  mnum;
+    string agenda;
+    int  mmnum;
+};//grupa[n];
+ vector<uslugi>v1(n);
+void add_record();
+void show_record();
+void search_record();
+void remove_record();
+void add_record()
+{
+   /* string  name1;
+    string surname1;
+    string venue1;
+    int  time1;
+    int  mnum1;
+    string agenda1;
+    int  mmnum1;
+    system("title Add Record");*/
+    int br;
+    cout<<"\n How many meetings do you want to enter?";
+    cout<<"\n >> ";
+    cin>>br;
+    for(int i=num;i<num+br;i++)
+    {
+      uslugi s;
+        cout<<"\n \t\t   ENTERING DATA FOR MEETING NUMBER - "<<i+1<<endl;
+        cout<<"\n MEETING NUMBER:";
+        cout<<"\n >> ";
+        cin>>s.mnum;
+       // v1.at(i).mnum=mnum1;
+        //cin>>grupa[i].mnum;
+        cout<<"\n Orgnizer Name:";
+        cout<<"\n >> ";
+        cin>>s.name;
+       // v1.at(i).name=name1;
+        //cin>>grupa[i].name;
+        cout<<"\n Orgnizer Surname:";
+        cout<<"\n >> ";
+        cin>>s.surname;
+       // v1.at(i).surname=surname1;
+        //cin>>grupa[i].surname;
+        cout<<"\n Agenda Of Meeting:";
+        cout<<"\n >> ";
+        cin>>s.agenda;
+       // v1.at(i).agenda=agenda1;
+        //cin>>grupa[i].agenda;
+        cout<<"\n VENUE:";
+        cout<<"\n >> ";
+        cin>>s.venue;
+       // v1.at(i).venue=venue1;
+        //cin>>grupa[i].venue;
+        cout<<"\n Time b/w(9-2||3-8):";
+        cout<<"\n >> ";
+        cin>>s.time;
+        //v1.at(i).time=time1;
+        //cin>>grupa[i].time;
+        cout<<"\n How many members are attending the meeting:";
+        cout<<"\n >> ";
+        cin>>s.mmnum;
+       // v1.at(i).mmnum=mmnum1;
+        //cin>>grupa[i].mmnum;
+        v1.push_back(s);
+    }
+    num=num+br;
+}
+void show_record(uslugi p)
+{
+
+    if (num==0)
+    {
+        cout<<"\t\t  by far there are no meeting at all \n";
+     }
+    cout<<"\n \t\t\t list with all meetings"<<num<<endl;
+
+    cout<<"\n MEETING NUMBER:";
+    cout<<"\n >> "<<p.mnum;
+    cout<<"\n Orgnizer Name:";
+    cout<<"\n >> "<<p.name;
+    cout<<"\n Orgnizer Surname:";
+    cout<<"\n >> "<<p.surname;
+    cout<<"\n AGENDA Of Meeting:";
+    cout<<"\n >> "<<p.agenda;
+    cout<<"\n VENUE Of Meeting:";
+    cout<<"\n >> "<<p.venue;
+    cout<<"\n TIME:";
+    cout<<"\n >> "<<p.time;
+    cout<<"\n MEETING MEMBERS:";
+    cout<<"\n >> "<<p.mmnum;
+    cout<<"\n\n";
+    }
+
+void remove_record(uslugi p)
+{
+    int k,index;
+    //for(int i=0;i<num;i++)
+    //{
+    /*cout<<"\n("<<i+1<<") "<<endl;
+    cout<<"MEETING NUMBER: "<<p.mnum<<endl;
+    cout<<"ORGNIZER NAME: "<<p.name<<endl;
+    cout<<"ORGNIZER SURNAME: "<<p.surname<<endl;
+    cout<<"AGENDA: "<<p.agenda<<endl;
+    cout<<"VENUE: "<<p.venue<<endl<<endl;
+    cout<<"TIME: "<<p.time<<endl;
+    cout<<"ATTENDING MEMEBRS NUMBER: "<<p.mmnum<<endl;
+    //}*/
+    cout<<"Who do you want to delete? \n >> ";
+    cin>>index;
+    for(k=0;k<num;k++)
+    {
+        if(k>=index)
+        {
+            v1[k].mnum=v1[k+1].mnum;
+        }
+        if(k==num-1)
+            break;
+        else
+            cout<<"BY FAR THERE IS NO DATA HERE"<<endl;
+    }
+    num--;
+
+        for(int i=0;i<num;i++)
+    {
+    cout<<"meeting number: "<<p.mnum<<endl;
+    cout<<"orgnizer name: "<<p.name<<endl;
+    cout<<"orgnizer Surname: "<<p.surname<<endl;
+    cout<<"AGENDA: "<<p.agenda<<endl;
+    cout<<"VENUE: "<<p.venue<<endl<<endl;
+    cout<<"TIME: "<<p.time<<endl;
+    cout<<"ATTENDING MEMEBRS NUMBER: "<<p.mmnum<<endl;
+    }
+}
+void print_count()
+{
+    cout<<"\n \t\t\t NUMBER OF MEETINGS - "<<num<<endl;
+    cout<<""<<endl;
+}
+
+
+void search_record(vector<uslugi> &v1)
+{
+   // int flag=0;
+    //long int tempegn;
+    //cout<<"\n Type the meeting number for the meeting you search: ";
+    //cout<<"\n >> ";
+    //cin>>tempegn;
+    int mno;
+    cout<<"enter the meeting number to be searched";
+    cin>>mno;
+    vector<uslugi>::iterator x;
+  for(x=v1.begin();x!=v1.end();x++)
+  {
+      if((*x).mnum==mno)
+      {
+    cout<<"meeting number: "<<(*x).mnum<<endl;
+    cout<<"orgnizer name: "<<(*x).name<<endl;
+    cout<<"orgnizer Surname: "<<(*x).surname<<endl;
+    cout<<"AGENDA: "<<(*x).agenda<<endl;
+    cout<<"VENUE: "<<(*x).venue<<endl<<endl;
+    cout<<"TIME: "<<(*x).time<<endl;
+     cout<<"ATTENDING MEMEBRS NUMBER: "<<(*x).mmnum<<endl;
+     return;
+      }
+  }
+  cout<<"given meeting number does not exist"<<endl;
+}
+
+   /* for (int i=0;i<n;i++)
+        if(n1==p.mnum)
+        {
+    cout<<"meeting number: "<<p.mnum<<endl;
+    cout<<"orgnizer name: "<<p.name<<endl;
+    cout<<"orgnizer Surname: "<<p.surname<<endl;
+    cout<<"AGENDA: "<<p.agenda<<endl;
+    cout<<"VENUE: "<<p.venue<<endl<<endl;
+    cout<<"TIME: "<<p.time<<endl;
+    cout<<"ATTENDING MEMEBRS NUMBER: "<<p.mmnum<<endl;
+            flag++;
+        }
+        if (!flag)
+        {
+            cout<<"\n\t MEETING WITH THAT NUMBER DOESNT EXCIST \n\n";
+        }
+}*/
+int main()
+  {
+    int choice;
+    //vector<uslugi>v1(n);
+    do
+    {
+        cout<<"\n\t\t*******************  Menu   **********************"<<endl;
+        cout<<"\n\t\t*          1.Add new meeting                          *";
+        cout<<"\n\t\t*          2.Search for a meeting by meeting number   *";
+        cout<<"\n\t\t*          3.Delete meeting                           *";
+        cout<<"\n\t\t*          4.List with all meetings                   *";
+        cout<<"\n\t\t*          5.Edit  meetings                           *";
+        cout<<"\n\t\t*          6.Exit                                     *";
+        cout<<"\n\t\t*                                                     *\n";
+        cout<<"\t\t************************************************"<<endl;
+        cout<<"\n Type your choice!  ";
+        cout<<"\n >> ";
+        cin>>choice;
+        switch(choice)
+    {
+        case 1:
+            {
+                print_count();
+                add_record();
+                break;
+            }
+        case 2:
+            {
+               // int number;
+                print_count();
+                //cout<<"enter meeting number which you want to search"<<endl;
+                //cin>>number;
+                search_record(v1);
+                break;
+                }
+        case 3:
+            {
+            print_count();
+            for(int i=0;i<num;i++)
+                {
+            remove_record(v1.at(i));
+                }
+            break;
+            }
+        case 4:
+            {
+
+
+                print_count();
+               for(int i=0;i<num;i++)
+                {
+                show_record(v1.at(i));
+                }
+                break;
+            }
+        /*case 5:
+            {
+                print_count();
+                show_record();
+                }*/
+        }
+    }
+    while(choice!=6);
+}
