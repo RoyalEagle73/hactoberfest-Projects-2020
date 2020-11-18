@@ -5,20 +5,13 @@
 
 int main() {
 	
-    int n;
+    int n,ind,sum=0;
     scanf("%d", &n);
-    
-    int a = n%10;
-    n= n/10;
-    int b = n%10;
-    n= n/10;
-    int c = n%10;
-    n= n/10;
-    int d = n%10;
-    n= n/10;
-    int e = n%10;
-    n= n/10;
-    int f = a+b+c+d+e;
-    printf("%d", f);
+    while(n>0){
+        ind=n%10;
+        n=n/10;
+        sum+=ind;
+    }
+    printf("%d",sum);
     return 0;
 }
