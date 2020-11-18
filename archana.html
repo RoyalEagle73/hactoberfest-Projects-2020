@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Text filling with water</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background: #262626;
+                font-family: arial;
+            }
+            .loader{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+
+            }
+
+            .loader h1{
+                margin:0;
+                padding:0;
+                text-transform: uppercase;
+                font-size: 10em; 
+                color:rgba(255,255,255,0.1);
+                background-image: url(water2.jpg);
+                background-repeat: repeat-x;
+                -webkit-background-clip: text;
+                animation: animate 15s linear infinite;
+
+
+            }
+
+@keyframes animate{
+        0%{
+            background-position:left 0px top 0px;
+        }
+        40%{
+            background-position:left 800px top -50px;
+        }
+        8%{
+            background-position:left 1800 top -50px;
+        }
+        100%{
+            background-position:left 2400px top 80px;
+        }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="loader">
+        <h1>Water</h1>
+    </div>
+    </body>
+</html>
