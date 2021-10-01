@@ -17,7 +17,7 @@ def bonAppetit(bill, k, b):
         print("Bon Appetit")
     else:
         print(b-actual)
-
+jb
 if __name__ == '__main__':
     nk = input().rstrip().split()
 
