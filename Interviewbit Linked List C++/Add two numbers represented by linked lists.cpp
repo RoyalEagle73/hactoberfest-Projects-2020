@@ -107,5 +107,6 @@ int main(void)
 	cout<<"Resultant list is ";
 	printlist(res);
 
+// 	return function
 return 0;
 }
