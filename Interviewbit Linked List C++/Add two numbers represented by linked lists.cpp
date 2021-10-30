@@ -64,9 +64,15 @@ Node* addTwoLists (Node* first, Node* second)
 }
 
 // A utility function to print a linked list
-void printList(Node *node)
+void printlist(Node *node)
 {
 	while(node != NULL)
+	{
+		cout << node->data << " ";
+		node = node->next;
+	}
+	cout<<endl;
+	while(node->next != NULL)
 	{
 		cout << node->data << " ";
 		node = node->next;
@@ -99,7 +105,8 @@ int main(void)
 	// Add the two lists and see result
 	res = addTwoLists(first, second);
 	cout<<"Resultant list is ";
-	printList(res);
+	printlist(res);
 
+// 	return function
 return 0;
 }
